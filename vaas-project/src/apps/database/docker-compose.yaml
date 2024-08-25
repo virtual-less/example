@@ -1,0 +1,12 @@
+version: '3.6'
+# docker-compose up
+
+services:
+
+  mysql-gui:
+    image: phpmyadmin:latest
+    restart: always
+    environment:
+      - PMA_ARBITRARY=1
+    ports:
+      - "8086:80"
